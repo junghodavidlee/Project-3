@@ -30,10 +30,13 @@ Project-3/
 ├── app.py                  # Launch Gradio application
 ├── evaluate_on_rt.py       # Evaluate models on Rotten Tomatoes dataset
 ├── requirements.txt        # Python dependencies
-├── model.pkl              # Saved Skywalker model
-├── vectorizer.pkl         # Saved TF-IDF vectorizer
+├── model.pkl               # Saved Skywalker model
+├── vectorizer.pkl          # Saved TF-IDF vectorizer
+├── notebooks/
+│   ├── IMDB_Movie_Sentiment_Analysis.ipynb  # Jupyter notebook with model development
+│   └── archive/            # Archived development notebooks
 └── data/
-    └── IMDB_Dataset.csv   # IMDB dataset (download required)
+    └── IMDB_Dataset.csv    # IMDB dataset (download required)
 ```
 
 ### Models
@@ -62,6 +65,13 @@ Project-3/
 | VADER      | 70%          | 61%                      |
 
 Although Skywalker had the best performance on the IMDB dataset, all models showed decreased accuracy on the Rotten Tomatoes dataset. This suggests domain differences between the datasets that could be explored in future work.
+
+### Development Notebooks
+
+The `notebooks/` directory contains Jupyter notebooks used during model development and experimentation:
+- **IMDB_Movie_Sentiment_Analysis.ipynb**: Complete notebook showing the development process for all three models (R2D2, Skywalker, and VADER), including training, evaluation, and Gradio interface prototypes
+
+The production code has been refactored into modular Python scripts for better maintainability and deployment.
 
 ### Installation & Usage
 
